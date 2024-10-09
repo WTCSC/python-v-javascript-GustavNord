@@ -9,7 +9,7 @@ function generatePassword(length = 12) {
         // Picks a random character from the characters string and adds it to password string
       password += characters.charAt(Math.random() * characters.length);
     }
-    return password;  
+    return password;
 }
 
-module.exports = generatePassword;  
+module.exports = generatePassword;
