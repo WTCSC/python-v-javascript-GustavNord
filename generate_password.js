@@ -1,10 +1,10 @@
 function generatePassword(length = 12) {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_.,:;<>/=';
-    let result = '';
+    let password = '';
     for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
+      password += characters.charAt(Math.floor(Math.random() * characters.length));
     }
-    return result;  
+    return password;  
 }
 
 module.exports = generatePassword;
